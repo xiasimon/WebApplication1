@@ -18,5 +18,10 @@ namespace WebApplication1.ServiceInterface
         {
             return new PlusResponse {Result = request.A + request.B};
         }
+
+        public object Any(Sub request)
+        {
+            return new SubResponse {Result = request.A - request.B};
+        }
     }
 }

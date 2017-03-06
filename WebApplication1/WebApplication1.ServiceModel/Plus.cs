@@ -13,4 +13,16 @@ namespace WebApplication1.ServiceModel
     {
         public int Result { get; set; }
     }
+
+    [Route("/sub/{A}/{B}")]
+    public class Sub : IReturn<SubResponse>
+    {
+        public int A { get; set; }
+        public int B { get; set; }
+    }
+
+    public class SubResponse
+    {
+        public int Result { get; set; }
+    }
 }
